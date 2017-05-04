@@ -23,10 +23,16 @@ function pokemon(nombre, color, poderDeAtaque){
 	}
 }
 
-const picachu = new pokemon("picachu", "amarillo", 100);
-const charmander = new pokemon("charmander", "rojo", 20);
+const picachu = new pokemon("picachu", "amarillo", 1000);
+const charmander = new pokemon("charmander", "rojo", 200);
 const nidoran = new pokemon("nidoran", "morado", 200);
 const togepi = new pokemon("togepi", "huevito", 10);
+const mewtwo = new pokemon("mewtwo","lila", 5000);
+const dragonite = new pokemon("dragonite", "naranjo", 4000);
+const rattata = new pokemon("rattata", "morado", 100000);
+const  ditto = new pokemon("ditto", "lila", 300)
+
+
 
 
 picachu.atacar(charmander);
