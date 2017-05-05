@@ -7,18 +7,47 @@
 <body>
 <link rel="stylesheet" type="text/css" href="">
 <h1> Pokemon Battle Royale</h1>
-<select>
+<h2> Choose your pokemon!</h2>
+<select id="poke">
   <option value="picachu">picachu</option>
   <option value="charmander">charmander</option>
   <option value="nidoran">nidoran</option>
   <option value="togepi" selected>togepi</option>
+  <option value="rattata">rattata</option>
+  <option value="mewtwo">mewtwo</option>
+  <option value="dragonite">dragonite</option>
+  <option value="ditto">ditto</option>
 </select>
-<select>
+<h2>Choose your opponent!</h2>
+<select id="poke2">
+<option value="picachu">picachu</option>
+  <option value="charmander">charmander</option>
+  <option value="nidoran">nidoran</option>
+  <option value="togepi">togepi</option>
   <option value="rattata">rattata</option>
   <option value="mewtwo">mewtwo</option>
   <option value="dragonite">dragonite</option>
   <option value="ditto" selected>ditto</option>
-</select>
-
+  
+</select> <br><br><br><br>
+<button type="button" class="button" onclick="fight()">Fight!</button>
+<style type="text/css">
+	.button {
+    background-color: #FFD600; /* amarillo */
+    border: none;
+    color: #B71C1C;/*rojo*/
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+}
+body{
+	background-color: #558B2F; /*verde*/
+}
+</style>
+<p id="result"></p>
+<script src="js/javascript.js"></script>
 </body>
 </html>
+

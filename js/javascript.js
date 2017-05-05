@@ -33,6 +33,15 @@ const rattata = new pokemon("rattata", "morado", 100000);
 const  ditto = new pokemon("ditto", "lila", 300)
 
 
+var pokemon1= document.getElementById("poke");
+var pokemon2= document.getElementById("poke2");
+	 
+  if (pokemon1 === pokemon2) { 
+    alert("¡no debes luchar contigo mismo!");
+  } else {
+   /*aqui tengo que hacer que peleen*/
+  } 
+
 
 
 picachu.atacar(charmander);
