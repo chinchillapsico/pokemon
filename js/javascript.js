@@ -9,9 +9,7 @@ function pokemon(nombre, color, poderDeAtaque){
 
 	
 	this.poderDeAtaque= poderDeAtaque;
-	this.mostrarPokemon= function(){
-		return("hola soy:"+ this.nombre + "y soy de color"+ this.color);
-	}
+	
 	this.aumentarAmistad = function(valor){
 		this.nivelDeAmistad = this.nivelDeAmistad+ valor
     /* este método aumenta el valor nivelDeAmistad (que parte en cero)*/		
@@ -22,6 +20,7 @@ function pokemon(nombre, color, poderDeAtaque){
 		/* este método le resta a la vida el poder de ataque de su contrincante*/
 	}
 }
+function fight(){}
 
 const picachu = new pokemon("picachu", "amarillo", 1000);
 const charmander = new pokemon("charmander", "rojo", 200);
@@ -42,11 +41,18 @@ var pokemon2= document.getElementById("poke2");
    /*aqui tengo que hacer que peleen*/
   } 
 
-
+this.mostrarPokemon= function(){
+		return(pokemon1 +"atacó a "+ pokemon2 + "y"+ pokemon2 + "le quedan" + vida + "puntos de vida");
+	}
 
 picachu.atacar(charmander);
-console.log(charmander.vida);
+return(charmander.vida);
 
 togepi.atacar(nidoran);
-console.log(nidoran.vida);
+return(nidoran.vida);
+
+
+}
+
+
 
