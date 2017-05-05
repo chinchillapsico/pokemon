@@ -20,7 +20,7 @@ function pokemon(nombre, color, poderDeAtaque){
 		/* este método le resta a la vida el poder de ataque de su contrincante*/
 	}
 }
-function fight(){}
+function fight(){
 
 const picachu = new pokemon("picachu", "amarillo", 1000);
 const charmander = new pokemon("charmander", "rojo", 200);
